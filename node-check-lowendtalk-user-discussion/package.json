@@ -1,0 +1,10 @@
+{
+  "name": "let",
+  "version": "0.1.0",
+  "dependencies": {
+    "mechanize": "~0.3.0",
+    "printf": "~0.1.2",
+    "colors": "~0.6.2",
+    "optimist": "~0.6.0"
+  }
+}
