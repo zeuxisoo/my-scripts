@@ -1,0 +1,59 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <getVoyageListResponse xmlns="http://example.com/MobileService/">
+            <getVoyageListResult>
+                <xs:schema id="dataset_main" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                    <xs:element name="dataset_main" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+                        <xs:complexType>
+                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                <xs:element name="Forward" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="FROMPORT" type="xs:string" minOccurs="0" />
+                                            <xs:element name="TOPORT" type="xs:string" minOccurs="0" />
+                                            <xs:element name="FPORTCODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="TPORTCODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SHIP" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SHIPCODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SETOFFTIME" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SETOFFTIME1" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SELLSTATUS" type="xs:string" minOccurs="0" />
+                                            <xs:element name="STATUS" type="xs:string" minOccurs="0" />
+                                            <xs:element name="LINECODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                            <xs:element name="TICKETNUM" type="xs:string" minOccurs="0" />
+                                            <xs:element name="ROUTEPORT" type="xs:string" minOccurs="0" />
+                                            <xs:element name="dtSeatRankPrice" msdata:DataType="System.Data.DataTable, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" minOccurs="0" />
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="return" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="FROMPORT" type="xs:string" minOccurs="0" />
+                                            <xs:element name="TOPORT" type="xs:string" minOccurs="0" />
+                                            <xs:element name="FPORTCODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="TPORTCODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SHIP" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SHIPCODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SETOFFTIME" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SETOFFTIME1" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SELLSTATUS" type="xs:string" minOccurs="0" />
+                                            <xs:element name="STATUS" type="xs:string" minOccurs="0" />
+                                            <xs:element name="LINECODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                            <xs:element name="TICKETNUM" type="xs:string" minOccurs="0" />
+                                            <xs:element name="ROUTEPORT" type="xs:string" minOccurs="0" />
+                                            <xs:element name="dtSeatRankPrice" msdata:DataType="System.Data.DataTable, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c95c56a189" type="xs:anyType" minOccurs="0" />
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:choice>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+            </getVoyageListResult>
+        </getVoyageListResponse>
+    </soap:Body>
+</soap:Envelope>

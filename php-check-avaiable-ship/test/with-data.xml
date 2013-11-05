@@ -1,0 +1,1806 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <getVoyageListResponse xmlns="http://example.com/MobileService/">
+            <getVoyageListResult>
+                <xs:schema id="dataset_main" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                    <xs:element name="dataset_main" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+                        <xs:complexType>
+                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                <xs:element name="Forward" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="FROMPORT" type="xs:string" minOccurs="0" />
+                                            <xs:element name="TOPORT" type="xs:string" minOccurs="0" />
+                                            <xs:element name="FPORTCODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="TPORTCODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SHIP" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SHIPCODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SETOFFTIME" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SETOFFTIME1" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SELLSTATUS" type="xs:string" minOccurs="0" />
+                                            <xs:element name="STATUS" type="xs:string" minOccurs="0" />
+                                            <xs:element name="LINECODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                            <xs:element name="TICKETNUM" type="xs:string" minOccurs="0" />
+                                            <xs:element name="ROUTEPORT" type="xs:string" minOccurs="0" />
+                                            <xs:element name="dtSeatRankPrice" msdata:DataType="System.Data.DataTable, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" minOccurs="0" />
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="return" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="FROMPORT" type="xs:string" minOccurs="0" />
+                                            <xs:element name="TOPORT" type="xs:string" minOccurs="0" />
+                                            <xs:element name="FPORTCODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="TPORTCODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SHIP" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SHIPCODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SETOFFTIME" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SETOFFTIME1" type="xs:string" minOccurs="0" />
+                                            <xs:element name="SELLSTATUS" type="xs:string" minOccurs="0" />
+                                            <xs:element name="STATUS" type="xs:string" minOccurs="0" />
+                                            <xs:element name="LINECODE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                            <xs:element name="TICKETNUM" type="xs:string" minOccurs="0" />
+                                            <xs:element name="ROUTEPORT" type="xs:string" minOccurs="0" />
+                                            <xs:element name="dtSeatRankPrice" msdata:DataType="System.Data.DataTable, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" minOccurs="0" />
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:choice>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                    <dataset_main xmlns="">
+                        <Forward diffgr:id="Forward1" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                            <FROMPORT>城港碼頭</FROMPORT>
+                            <TOPORT>山海港</TOPORT>
+                            <FPORTCODE>CSC</FPORTCODE>
+                            <TPORTCODE>SX</TPORTCODE>
+                            <SHIP>一號</SHIP>
+                            <SHIPCODE>GM</SHIPCODE>
+                            <SETOFFTIME>2013-11-06 08:00</SETOFFTIME>
+                            <SETOFFTIME1>08:00</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>CSC-SX</LINECODE>
+                            <VOYAGEROUTEID>32246665</VOYAGEROUTEID>
+                            <TICKETNUM>121(51)120(6)119(5)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPrice_0" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPrice_0" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPrice_0" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPrice_0" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPrice_0>
+                                        <dtSeatRankPrice_0 diffgr:id="dtSeatRankPrice_01" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>32246665</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23299905</DETAIL1>
+                                            <DETAIL2>23299964</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_0>
+                                        <dtSeatRankPrice_0 diffgr:id="dtSeatRankPrice_02" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>32246665</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300005</DETAIL1>
+                                            <DETAIL2>23300060</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_0>
+                                        <dtSeatRankPrice_0 diffgr:id="dtSeatRankPrice_03" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>32246665</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300101</DETAIL1>
+                                            <DETAIL2>23300106</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_0>
+                                    </dsSeatRankPrice_0>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </Forward>
+                        <Forward diffgr:id="Forward2" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                            <FROMPORT>城港碼頭</FROMPORT>
+                            <TOPORT>山海港</TOPORT>
+                            <FPORTCODE>CSC</FPORTCODE>
+                            <TPORTCODE>SX</TPORTCODE>
+                            <SHIP>山海</SHIP>
+                            <SHIPCODE>ZO</SHIPCODE>
+                            <SETOFFTIME>2013-11-06 08:30</SETOFFTIME>
+                            <SETOFFTIME1>08:30</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>CSC-SX</LINECODE>
+                            <VOYAGEROUTEID>33045347</VOYAGEROUTEID>
+                            <TICKETNUM>121(119)120(40)119(7)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPrice_1" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPrice_1" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPrice_1" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPrice_1" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPrice_1>
+                                        <dtSeatRankPrice_1 diffgr:id="dtSeatRankPrice_11" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045347</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23299905</DETAIL1>
+                                            <DETAIL2>23299964</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_1>
+                                        <dtSeatRankPrice_1 diffgr:id="dtSeatRankPrice_12" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045347</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300005</DETAIL1>
+                                            <DETAIL2>23300060</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_1>
+                                        <dtSeatRankPrice_1 diffgr:id="dtSeatRankPrice_13" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045347</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300101</DETAIL1>
+                                            <DETAIL2>23300106</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_1>
+                                    </dsSeatRankPrice_1>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </Forward>
+                        <Forward diffgr:id="Forward3" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                            <FROMPORT>城港碼頭</FROMPORT>
+                            <TOPORT>山海港</TOPORT>
+                            <FPORTCODE>CSC</FPORTCODE>
+                            <TPORTCODE>SX</TPORTCODE>
+                            <SHIP>江河</SHIP>
+                            <SHIPCODE>QJ</SHIPCODE>
+                            <SETOFFTIME>2013-11-06 10:00</SETOFFTIME>
+                            <SETOFFTIME1>10:00</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>CSC-SX</LINECODE>
+                            <VOYAGEROUTEID>33045223</VOYAGEROUTEID>
+                            <TICKETNUM>121(238)120(41)119(10)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPrice_2" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPrice_2" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPrice_2" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPrice_2" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPrice_2>
+                                        <dtSeatRankPrice_2 diffgr:id="dtSeatRankPrice_21" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045223</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23299905</DETAIL1>
+                                            <DETAIL2>23299964</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_2>
+                                        <dtSeatRankPrice_2 diffgr:id="dtSeatRankPrice_22" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045223</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300005</DETAIL1>
+                                            <DETAIL2>23300060</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_2>
+                                        <dtSeatRankPrice_2 diffgr:id="dtSeatRankPrice_23" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045223</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300101</DETAIL1>
+                                            <DETAIL2>23300106</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_2>
+                                    </dsSeatRankPrice_2>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </Forward>
+                        <Forward diffgr:id="Forward4" msdata:rowOrder="3" diffgr:hasChanges="inserted">
+                            <FROMPORT>城港碼頭</FROMPORT>
+                            <TOPORT>山海港</TOPORT>
+                            <FPORTCODE>CSC</FPORTCODE>
+                            <TPORTCODE>SX</TPORTCODE>
+                            <SHIP>興隆</SHIP>
+                            <SHIPCODE>XZ</SHIPCODE>
+                            <SETOFFTIME>2013-11-06 12:00</SETOFFTIME>
+                            <SETOFFTIME1>12:00</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>CSC-SX</LINECODE>
+                            <VOYAGEROUTEID>33045310</VOYAGEROUTEID>
+                            <TICKETNUM>121(270)120(43)119(15)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPrice_3" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPrice_3" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPrice_3" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPrice_3" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPrice_3>
+                                        <dtSeatRankPrice_3 diffgr:id="dtSeatRankPrice_31" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045310</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23299905</DETAIL1>
+                                            <DETAIL2>23299964</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_3>
+                                        <dtSeatRankPrice_3 diffgr:id="dtSeatRankPrice_32" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045310</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300005</DETAIL1>
+                                            <DETAIL2>23300060</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_3>
+                                        <dtSeatRankPrice_3 diffgr:id="dtSeatRankPrice_33" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045310</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300101</DETAIL1>
+                                            <DETAIL2>23300106</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_3>
+                                    </dsSeatRankPrice_3>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </Forward>
+                        <Forward diffgr:id="Forward5" msdata:rowOrder="4" diffgr:hasChanges="inserted">
+                            <FROMPORT>城港碼頭</FROMPORT>
+                            <TOPORT>山海港</TOPORT>
+                            <FPORTCODE>CSC</FPORTCODE>
+                            <TPORTCODE>SX</TPORTCODE>
+                            <SHIP>不鳥湖</SHIP>
+                            <SHIPCODE>CH</SHIPCODE>
+                            <SETOFFTIME>2013-11-06 14:00</SETOFFTIME>
+                            <SETOFFTIME1>14:00</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>CSC-SX</LINECODE>
+                            <VOYAGEROUTEID>33045397</VOYAGEROUTEID>
+                            <TICKETNUM>121(240)120(57)119(13)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPrice_4" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPrice_4" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPrice_4" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPrice_4" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPrice_4>
+                                        <dtSeatRankPrice_4 diffgr:id="dtSeatRankPrice_41" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045397</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23299905</DETAIL1>
+                                            <DETAIL2>23299964</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_4>
+                                        <dtSeatRankPrice_4 diffgr:id="dtSeatRankPrice_42" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045397</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300005</DETAIL1>
+                                            <DETAIL2>23300060</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_4>
+                                        <dtSeatRankPrice_4 diffgr:id="dtSeatRankPrice_43" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045397</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300101</DETAIL1>
+                                            <DETAIL2>23300106</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_4>
+                                    </dsSeatRankPrice_4>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </Forward>
+                        <Forward diffgr:id="Forward6" msdata:rowOrder="5" diffgr:hasChanges="inserted">
+                            <FROMPORT>城港碼頭</FROMPORT>
+                            <TOPORT>山海港</TOPORT>
+                            <FPORTCODE>CSC</FPORTCODE>
+                            <TPORTCODE>SX</TPORTCODE>
+                            <SHIP>江河</SHIP>
+                            <SHIPCODE>QJ</SHIPCODE>
+                            <SETOFFTIME>2013-11-06 16:00</SETOFFTIME>
+                            <SETOFFTIME1>16:00</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>CSC-SX</LINECODE>
+                            <VOYAGEROUTEID>33045235</VOYAGEROUTEID>
+                            <TICKETNUM>121(170)120(50)119(12)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPrice_5" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPrice_5" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPrice_5" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPrice_5" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPrice_5>
+                                        <dtSeatRankPrice_5 diffgr:id="dtSeatRankPrice_51" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045235</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23299905</DETAIL1>
+                                            <DETAIL2>23299964</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_5>
+                                        <dtSeatRankPrice_5 diffgr:id="dtSeatRankPrice_52" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045235</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300005</DETAIL1>
+                                            <DETAIL2>23300060</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_5>
+                                        <dtSeatRankPrice_5 diffgr:id="dtSeatRankPrice_53" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045235</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300101</DETAIL1>
+                                            <DETAIL2>23300106</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_5>
+                                    </dsSeatRankPrice_5>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </Forward>
+                        <Forward diffgr:id="Forward7" msdata:rowOrder="6" diffgr:hasChanges="inserted">
+                            <FROMPORT>城港碼頭</FROMPORT>
+                            <TOPORT>山海港</TOPORT>
+                            <FPORTCODE>CSC</FPORTCODE>
+                            <TPORTCODE>SX</TPORTCODE>
+                            <SHIP>興隆</SHIP>
+                            <SHIPCODE>XZ</SHIPCODE>
+                            <SETOFFTIME>2013-11-06 18:00</SETOFFTIME>
+                            <SETOFFTIME1>18:00</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>CSC-SX</LINECODE>
+                            <VOYAGEROUTEID>33045322</VOYAGEROUTEID>
+                            <TICKETNUM>121(84)120(41)119(15)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPrice_6" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPrice_6" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPrice_6" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPrice_6" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPrice_6>
+                                        <dtSeatRankPrice_6 diffgr:id="dtSeatRankPrice_61" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045322</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23299905</DETAIL1>
+                                            <DETAIL2>23299964</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_6>
+                                        <dtSeatRankPrice_6 diffgr:id="dtSeatRankPrice_62" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045322</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300005</DETAIL1>
+                                            <DETAIL2>23300060</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_6>
+                                        <dtSeatRankPrice_6 diffgr:id="dtSeatRankPrice_63" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045322</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300101</DETAIL1>
+                                            <DETAIL2>23300106</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_6>
+                                    </dsSeatRankPrice_6>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </Forward>
+                        <Forward diffgr:id="Forward8" msdata:rowOrder="7" diffgr:hasChanges="inserted">
+                            <FROMPORT>城港碼頭</FROMPORT>
+                            <TOPORT>山海港</TOPORT>
+                            <FPORTCODE>CSC</FPORTCODE>
+                            <TPORTCODE>SX</TPORTCODE>
+                            <SHIP>山海</SHIP>
+                            <SHIPCODE>ZO</SHIPCODE>
+                            <SETOFFTIME>2013-11-06 20:00</SETOFFTIME>
+                            <SETOFFTIME1>20:00</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>CSC-SX</LINECODE>
+                            <VOYAGEROUTEID>33045371</VOYAGEROUTEID>
+                            <TICKETNUM>121(163)120(56)119(8)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPrice_7" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPrice_7" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPrice_7" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPrice_7" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPrice_7>
+                                        <dtSeatRankPrice_7 diffgr:id="dtSeatRankPrice_71" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045371</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23299905</DETAIL1>
+                                            <DETAIL2>23299964</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_7>
+                                        <dtSeatRankPrice_7 diffgr:id="dtSeatRankPrice_72" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045371</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300005</DETAIL1>
+                                            <DETAIL2>23300060</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_7>
+                                        <dtSeatRankPrice_7 diffgr:id="dtSeatRankPrice_73" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045371</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23300101</DETAIL1>
+                                            <DETAIL2>23300106</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPrice_7>
+                                    </dsSeatRankPrice_7>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </Forward>
+                        <return diffgr:id="return1" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                            <FROMPORT>山海港</FROMPORT>
+                            <TOPORT>城港碼頭</TOPORT>
+                            <FPORTCODE>SX</FPORTCODE>
+                            <TPORTCODE>CSC</TPORTCODE>
+                            <SHIP>不鳥湖</SHIP>
+                            <SHIPCODE>CH</SHIPCODE>
+                            <SETOFFTIME>2013-11-07 08:00</SETOFFTIME>
+                            <SETOFFTIME1>08:00</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>SX-CSC</LINECODE>
+                            <VOYAGEROUTEID>33045925</VOYAGEROUTEID>
+                            <TICKETNUM>121(208)120(46)119(9)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPriceReturn_0" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPriceReturn_0" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPriceReturn_0" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPriceReturn_0" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPriceReturn_0>
+                                        <dtSeatRankPriceReturn_0 diffgr:id="dtSeatRankPriceReturn_01" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045925</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319635</DETAIL1>
+                                            <DETAIL2>23319685</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_0>
+                                        <dtSeatRankPriceReturn_0 diffgr:id="dtSeatRankPriceReturn_02" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045925</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319724</DETAIL1>
+                                            <DETAIL2>23319773</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_0>
+                                        <dtSeatRankPriceReturn_0 diffgr:id="dtSeatRankPriceReturn_03" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045925</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319813</DETAIL1>
+                                            <DETAIL2>23319818</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_0>
+                                    </dsSeatRankPriceReturn_0>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </return>
+                        <return diffgr:id="return2" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                            <FROMPORT>山海港</FROMPORT>
+                            <TOPORT>城港碼頭</TOPORT>
+                            <FPORTCODE>SX</FPORTCODE>
+                            <TPORTCODE>CSC</TPORTCODE>
+                            <SHIP>山海</SHIP>
+                            <SHIPCODE>ZO</SHIPCODE>
+                            <SETOFFTIME>2013-11-07 09:30</SETOFFTIME>
+                            <SETOFFTIME1>09:30</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>SX-CSC</LINECODE>
+                            <VOYAGEROUTEID>33045965</VOYAGEROUTEID>
+                            <TICKETNUM>121(143)120(53)119(0)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPriceReturn_1" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPriceReturn_1" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPriceReturn_1" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPriceReturn_1" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPriceReturn_1>
+                                        <dtSeatRankPriceReturn_1 diffgr:id="dtSeatRankPriceReturn_11" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045965</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319635</DETAIL1>
+                                            <DETAIL2>23319685</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_1>
+                                        <dtSeatRankPriceReturn_1 diffgr:id="dtSeatRankPriceReturn_12" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045965</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319724</DETAIL1>
+                                            <DETAIL2>23319773</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_1>
+                                        <dtSeatRankPriceReturn_1 diffgr:id="dtSeatRankPriceReturn_13" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045965</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319813</DETAIL1>
+                                            <DETAIL2>23319818</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_1>
+                                    </dsSeatRankPriceReturn_1>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </return>
+                        <return diffgr:id="return3" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                            <FROMPORT>山海港</FROMPORT>
+                            <TOPORT>城港碼頭</TOPORT>
+                            <FPORTCODE>SX</FPORTCODE>
+                            <TPORTCODE>CSC</TPORTCODE>
+                            <SHIP>興隆</SHIP>
+                            <SHIPCODE>XZ</SHIPCODE>
+                            <SETOFFTIME>2013-11-07 11:30</SETOFFTIME>
+                            <SETOFFTIME1>11:30</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>SX-CSC</LINECODE>
+                            <VOYAGEROUTEID>33045885</VOYAGEROUTEID>
+                            <TICKETNUM>121(269)120(37)119(11)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPriceReturn_2" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPriceReturn_2" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPriceReturn_2" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPriceReturn_2" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPriceReturn_2>
+                                        <dtSeatRankPriceReturn_2 diffgr:id="dtSeatRankPriceReturn_21" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045885</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319635</DETAIL1>
+                                            <DETAIL2>23319685</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_2>
+                                        <dtSeatRankPriceReturn_2 diffgr:id="dtSeatRankPriceReturn_22" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045885</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319724</DETAIL1>
+                                            <DETAIL2>23319773</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_2>
+                                        <dtSeatRankPriceReturn_2 diffgr:id="dtSeatRankPriceReturn_23" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045885</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319813</DETAIL1>
+                                            <DETAIL2>23319818</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_2>
+                                    </dsSeatRankPriceReturn_2>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </return>
+                        <return diffgr:id="return4" msdata:rowOrder="3" diffgr:hasChanges="inserted">
+                            <FROMPORT>山海港</FROMPORT>
+                            <TOPORT>城港碼頭</TOPORT>
+                            <FPORTCODE>SX</FPORTCODE>
+                            <TPORTCODE>CSC</TPORTCODE>
+                            <SHIP>不鳥湖</SHIP>
+                            <SHIPCODE>CH</SHIPCODE>
+                            <SETOFFTIME>2013-11-07 14:00</SETOFFTIME>
+                            <SETOFFTIME1>14:00</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>SX-CSC</LINECODE>
+                            <VOYAGEROUTEID>33045937</VOYAGEROUTEID>
+                            <TICKETNUM>121(228)120(43)119(9)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPriceReturn_3" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPriceReturn_3" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPriceReturn_3" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPriceReturn_3" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPriceReturn_3>
+                                        <dtSeatRankPriceReturn_3 diffgr:id="dtSeatRankPriceReturn_31" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045937</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319635</DETAIL1>
+                                            <DETAIL2>23319685</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_3>
+                                        <dtSeatRankPriceReturn_3 diffgr:id="dtSeatRankPriceReturn_32" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045937</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319724</DETAIL1>
+                                            <DETAIL2>23319773</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_3>
+                                        <dtSeatRankPriceReturn_3 diffgr:id="dtSeatRankPriceReturn_33" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045937</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319813</DETAIL1>
+                                            <DETAIL2>23319818</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_3>
+                                    </dsSeatRankPriceReturn_3>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </return>
+                        <return diffgr:id="return5" msdata:rowOrder="4" diffgr:hasChanges="inserted">
+                            <FROMPORT>山海港</FROMPORT>
+                            <TOPORT>城港碼頭</TOPORT>
+                            <FPORTCODE>SX</FPORTCODE>
+                            <TPORTCODE>CSC</TPORTCODE>
+                            <SHIP>山海</SHIP>
+                            <SHIPCODE>ZO</SHIPCODE>
+                            <SETOFFTIME>2013-11-07 16:00</SETOFFTIME>
+                            <SETOFFTIME1>16:00</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>SX-CSC</LINECODE>
+                            <VOYAGEROUTEID>33045977</VOYAGEROUTEID>
+                            <TICKETNUM>121(205)120(47)119(0)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPriceReturn_4" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPriceReturn_4" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPriceReturn_4" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPriceReturn_4" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPriceReturn_4>
+                                        <dtSeatRankPriceReturn_4 diffgr:id="dtSeatRankPriceReturn_41" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045977</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319635</DETAIL1>
+                                            <DETAIL2>23319685</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_4>
+                                        <dtSeatRankPriceReturn_4 diffgr:id="dtSeatRankPriceReturn_42" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045977</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319724</DETAIL1>
+                                            <DETAIL2>23319773</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_4>
+                                        <dtSeatRankPriceReturn_4 diffgr:id="dtSeatRankPriceReturn_43" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045977</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319813</DETAIL1>
+                                            <DETAIL2>23319818</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_4>
+                                    </dsSeatRankPriceReturn_4>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </return>
+                        <return diffgr:id="return6" msdata:rowOrder="5" diffgr:hasChanges="inserted">
+                            <FROMPORT>山海港</FROMPORT>
+                            <TOPORT>城港碼頭</TOPORT>
+                            <FPORTCODE>SX</FPORTCODE>
+                            <TPORTCODE>CSC</TPORTCODE>
+                            <SHIP>一號</SHIP>
+                            <SHIPCODE>GM</SHIPCODE>
+                            <SETOFFTIME>2013-11-07 17:30</SETOFFTIME>
+                            <SETOFFTIME1>17:30</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>SX-CSC</LINECODE>
+                            <VOYAGEROUTEID>31469220</VOYAGEROUTEID>
+                            <TICKETNUM>121(77)120(20)119(0)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPriceReturn_5" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPriceReturn_5" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPriceReturn_5" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPriceReturn_5" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPriceReturn_5>
+                                        <dtSeatRankPriceReturn_5 diffgr:id="dtSeatRankPriceReturn_51" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>31469220</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319635</DETAIL1>
+                                            <DETAIL2>23319685</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_5>
+                                        <dtSeatRankPriceReturn_5 diffgr:id="dtSeatRankPriceReturn_52" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>31469220</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319724</DETAIL1>
+                                            <DETAIL2>23319773</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_5>
+                                        <dtSeatRankPriceReturn_5 diffgr:id="dtSeatRankPriceReturn_53" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>31469220</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319813</DETAIL1>
+                                            <DETAIL2>23319818</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_5>
+                                    </dsSeatRankPriceReturn_5>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </return>
+                        <return diffgr:id="return7" msdata:rowOrder="6" diffgr:hasChanges="inserted">
+                            <FROMPORT>山海港</FROMPORT>
+                            <TOPORT>城港碼頭</TOPORT>
+                            <FPORTCODE>SX</FPORTCODE>
+                            <TPORTCODE>CSC</TPORTCODE>
+                            <SHIP>江河</SHIP>
+                            <SHIPCODE>QJ</SHIPCODE>
+                            <SETOFFTIME>2013-11-07 18:00</SETOFFTIME>
+                            <SETOFFTIME1>18:00</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>SX-CSC</LINECODE>
+                            <VOYAGEROUTEID>33045849</VOYAGEROUTEID>
+                            <TICKETNUM>121(255)120(31)119(3)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPriceReturn_6" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPriceReturn_6" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPriceReturn_6" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPriceReturn_6" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPriceReturn_6>
+                                        <dtSeatRankPriceReturn_6 diffgr:id="dtSeatRankPriceReturn_61" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045849</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319635</DETAIL1>
+                                            <DETAIL2>23319685</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_6>
+                                        <dtSeatRankPriceReturn_6 diffgr:id="dtSeatRankPriceReturn_62" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045849</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319724</DETAIL1>
+                                            <DETAIL2>23319773</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_6>
+                                        <dtSeatRankPriceReturn_6 diffgr:id="dtSeatRankPriceReturn_63" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045849</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319813</DETAIL1>
+                                            <DETAIL2>23319818</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_6>
+                                    </dsSeatRankPriceReturn_6>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </return>
+                        <return diffgr:id="return8" msdata:rowOrder="7" diffgr:hasChanges="inserted">
+                            <FROMPORT>山海港</FROMPORT>
+                            <TOPORT>城港碼頭</TOPORT>
+                            <FPORTCODE>SX</FPORTCODE>
+                            <TPORTCODE>CSC</TPORTCODE>
+                            <SHIP>不鳥湖</SHIP>
+                            <SHIPCODE>CH</SHIPCODE>
+                            <SETOFFTIME>2013-11-07 20:00</SETOFFTIME>
+                            <SETOFFTIME1>20:00</SETOFFTIME1>
+                            <SELLSTATUS>M</SELLSTATUS>
+                            <STATUS>N</STATUS>
+                            <LINECODE>SX-CSC</LINECODE>
+                            <VOYAGEROUTEID>33045949</VOYAGEROUTEID>
+                            <TICKETNUM>121(241)120(47)119(9)</TICKETNUM>
+                            <dtSeatRankPrice>
+                                <xs:schema id="dsSeatRankPriceReturn_7" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <xs:element name="dsSeatRankPriceReturn_7" msdata:IsDataSet="true" msdata:MainDataTable="dtSeatRankPriceReturn_7" msdata:UseCurrentLocale="true">
+                                        <xs:complexType>
+                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="dtSeatRankPriceReturn_7" msdata:CaseSensitive="False" msdata:Locale="zh-CN">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="VOYAGEROUTEID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANKID" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SEATRANK" type="xs:string" minOccurs="0" />
+                                                            <xs:element name="PRICE1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="PRICE4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="DETAIL4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM1" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM2" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM3" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="NUM4" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="SUM" type="xs:decimal" minOccurs="0" />
+                                                            <xs:element name="ADJUST" type="xs:decimal" minOccurs="0" />
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:schema>
+                                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                                    <dsSeatRankPriceReturn_7>
+                                        <dtSeatRankPriceReturn_7 diffgr:id="dtSeatRankPriceReturn_71" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045949</VOYAGEROUTEID>
+                                            <SEATRANKID>121</SEATRANKID>
+                                            <SEATRANK>正常位</SEATRANK>
+                                            <PRICE1>230</PRICE1>
+                                            <PRICE2>130</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319635</DETAIL1>
+                                            <DETAIL2>23319685</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_7>
+                                        <dtSeatRankPriceReturn_7 diffgr:id="dtSeatRankPriceReturn_72" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045949</VOYAGEROUTEID>
+                                            <SEATRANKID>120</SEATRANKID>
+                                            <SEATRANK>高級位</SEATRANK>
+                                            <PRICE1>310</PRICE1>
+                                            <PRICE2>170</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319724</DETAIL1>
+                                            <DETAIL2>23319773</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_7>
+                                        <dtSeatRankPriceReturn_7 diffgr:id="dtSeatRankPriceReturn_73" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                                            <VOYAGEROUTEID>33045949</VOYAGEROUTEID>
+                                            <SEATRANKID>119</SEATRANKID>
+                                            <SEATRANK>進階位</SEATRANK>
+                                            <PRICE1>390</PRICE1>
+                                            <PRICE2>215</PRICE2>
+                                            <PRICE3>0</PRICE3>
+                                            <PRICE4>0</PRICE4>
+                                            <DETAIL1>23319813</DETAIL1>
+                                            <DETAIL2>23319818</DETAIL2>
+                                            <DETAIL3>0</DETAIL3>
+                                            <DETAIL4>0</DETAIL4>
+                                            <NUM1>0</NUM1>
+                                            <NUM2>0</NUM2>
+                                            <NUM3>0</NUM3>
+                                            <NUM4>0</NUM4>
+                                            <SUM>0</SUM>
+                                            <ADJUST>0</ADJUST>
+                                        </dtSeatRankPriceReturn_7>
+                                    </dsSeatRankPriceReturn_7>
+                                </diffgr:diffgram>
+                            </dtSeatRankPrice>
+                        </return>
+                    </dataset_main>
+                </diffgr:diffgram>
+            </getVoyageListResult>
+        </getVoyageListResponse>
+    </soap:Body>
+</soap:Envelope>
