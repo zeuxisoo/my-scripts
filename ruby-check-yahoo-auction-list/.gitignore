@@ -1,0 +1,8 @@
+.ruby-version
+
+.bundle
+vendor
+
+test/*.html
+
+Gemfile.lock
