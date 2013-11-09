@@ -1,0 +1,3 @@
+requires 'WWW::Mechanize';
+requires 'Data::Dumper';
+requires 'LWP::Protocol::https';
