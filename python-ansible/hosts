@@ -1,0 +1,8 @@
+[debian]
+hand  ansible_ssh_host=104.***.***.***  ansible_ssh_user=zeoo  ansible_ssh_port=9999  ansible_ssh_private_key_file=~/.ssh/id_rsa.hand
+kand  ansible_ssh_host=192.***.***.***  ansible_ssh_user=zeoo  ansible_ssh_port=9999  ansible_ssh_private_key_file=~/.ssh/id_rsa.kand
+band  ansible_ssh_host=192.***.***.***  ansible_ssh_user=zeoo  ansible_ssh_port=9999  ansible_ssh_private_key_file=~/.ssh/id_rsa.band
+cand  ansible_ssh_host=108.***.***.***  ansible_ssh_user=zeoo  ansible_ssh_port=9999  ansible_ssh_private_key_file=~/.ssh/id_rsa.cand
+
+[centos]
+wand  ansible_ssh_host=192.***.***.***  ansible_ssh_user=zeoo  ansible_ssh_port=9999  ansible_ssh_private_key_file=~/.ssh/id_rsa.wand
