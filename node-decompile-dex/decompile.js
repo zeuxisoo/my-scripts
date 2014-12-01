@@ -12,9 +12,9 @@ var configs = {
     'outputDirectory': './output',
     'toolsDirectory' : './tools',
     'dex2jarFileUrl' : 'https://dex2jar.googlecode.com/files/dex2jar-0.0.9.15.zip',
-    'apktoolFileUrl' : 'https://android-apktool.googlecode.com/files/apktool1.5.2.tar.bz2',
+    'apktoolFileUrl' : 'https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.0.0rc3.jar',
     'dex2jarFilename': 'dex2jar.zip',
-    'apktoolFilename': 'apktool.tar.bz2'
+    'apktoolFilename': 'apktool.jar'
 }
 
 var opts = optimist.usage("Usage: $0")
@@ -62,17 +62,9 @@ if (opts.install === true) {
         });
     }
 
-    function extractApkTool(callback) {
-        winston.info("Extracting the apktool file");
-        child_process.exec(util.format("tar jxvf %s -C %s", apktoolZipPath, toolsDirectory), function(error, stdout, stderr) {
-            callback(null);
-        });
-    }
-
     function cleanZipFiles(callback) {
         winston.info("Cleaning zip files");
         fs.unlinkSync(dex2jarZipPath);
-        fs.unlinkSync(apktoolZipPath);
         callback(null);
     }
 
@@ -85,7 +77,12 @@ if (opts.install === true) {
 
     function renameExtractedApkTool(callback) {
         winston.info("Renaming the extacted apktool file");
-        child_process.exec(util.format("mv %s/apktool* %s/apktool", toolsDirectory, toolsDirectory), function(error, stdout, stderr) {
+
+        apktoolDirectory = toolsDirectory + "/apktool";
+
+        mkdirp.sync(apktoolDirectory);
+
+        child_process.exec(util.format("mv %s/apktool*.jar %s/apktool", toolsDirectory, toolsDirectory), function(error, stdout, stderr) {
             callback(null);
         })
     }
@@ -93,7 +90,7 @@ if (opts.install === true) {
     async.series([
         createToolsDirectory,
         downloadDex2Jar, downloadApkTool,
-        extractDex2Jar, extractApkTool,
+        extractDex2Jar,
         cleanZipFiles,
         renameExtractedDex2Jar, renameExtractedApkTool
     ], function(error, results) {
