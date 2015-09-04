@@ -41,4 +41,4 @@ delete_cmd="/home/backup/dropbox_uploader.sh delete $DROPBOX_PATH/$EXPIRE_DAY.ta
 echo $delete_cmd && eval "$delete_cmd"
 
 # Remove backup zip file
-rm -rf $BACKUP_DIR
+rm -rf $BACKUP_DIR.tar.gz
