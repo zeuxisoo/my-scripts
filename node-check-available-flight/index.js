@@ -10,7 +10,7 @@ request.post({
     url    : "http://www.travpulse.com/web/b2b2c_returnfares_chi.asp?query=0&page_value=ReturnFares",
     headers: {
         'User-Agent': 'Mozilla/5.0 ;Windows NT 6.1; WOW64; Trident/7.0; rv:11.0; like Gecko',
-        'Referer'   : 'http://www.travpulse.com/web/b2b2c_airfares_chi.asp?cmpid=773&b2cpin=060705'
+        'Referer'   : 'http://www.travpulse.com/web/b2b2c_airfares_chi.asp?cmpid=<<<< YOUR_CMPID >>>>&b2cpin=<<<< YOUR_B2CPIN >>>>'
     },
     form: {
         'DPPORT'            : 'HKG',
@@ -29,8 +29,8 @@ request.post({
         'SortBy'            : 'SP',
         'pref_air'          : '',
 
-        'cmpid'             : '___YOUR___CMPID___',
-        'b2cpin'            : '___YOUR___B2CPIN___',
+        'cmpid'             : '<<<< YOUR_CMPID >>>>',
+        'b2cpin'            : '<<<< YOUR_B2CPIN >>>>',
         'lang'              : '',
         'submit.x'          : 23,
         'submit.y'          : 11,
