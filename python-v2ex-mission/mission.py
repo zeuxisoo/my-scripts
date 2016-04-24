@@ -66,13 +66,17 @@ class Mission(object):
                 self.debug("You can not complete daily mission")
 
     def signin(self, username, password):
-        page = self.agent.get(self.v2ex_signin_url)
+        page   = self.agent.get(self.v2ex_signin_url)
+        inputs = page.select("input.sl")
+
+        username_input = inputs[0].attrs['name']
+        password_input = inputs[1].attrs['name']
 
         form = page.form("form", index=1)
         form.action = self.v2ex_signin_url
         form.fields.update({
-            'u': username,
-            'p': password
+            username_input: username,
+            password_input: password
         })
         self.signin_response = form.submit()
 
