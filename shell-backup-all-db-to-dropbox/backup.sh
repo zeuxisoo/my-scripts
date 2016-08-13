@@ -19,7 +19,7 @@ databases=`$MYSQL_SELF -u $MYSQL_USER -p"$MYSQL_PASS" -e 'SHOW DATABASES;' | gre
 
 for database in $databases; do
     echo "Dumping $database"
-    $MYSQL_DUMP --force --opt -u $MYSQL_USER -p"$MYSQL_PASS" --database $databases | gzip > "$BACKUP_DIR/$database.gz"
+    $MYSQL_DUMP --force --opt -u $MYSQL_USER -p"$MYSQL_PASS" --single-transaction --skip-lock-tables $database | gzip > "$BACKUP_DIR/$database.gz"
 done
 
 # Zip databases to one file then remove all databases
