@@ -6,8 +6,7 @@ Create the virtualenv
 
 Install the dependency
 
-    source venv/bin/activate
-    pip install -r requirements.txt
+    source venv/bin/activate && pip install -r requirements.txt
 
 Run the script
 
