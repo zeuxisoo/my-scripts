@@ -1,23 +1,38 @@
 <?php
-// Request JSON
+// Basic setup
+date_default_timezone_set("Asia/Hong_Kong");
+
+// Define helper
+function logger($message) {
+    return sprintf("[%s] %s\n", date("Y-m-d H:i:s"), $message);
+}
+
+// Request data
 $curl = curl_init();
-curl_setopt($curl, CURLOPT_URL,            "http://store.hk.chinaunicom.com/good_detail/good_detail!loadGoodDetail.action");
+curl_setopt($curl, CURLOPT_URL,            "https://www.cuniq.com/frontend/goodsController/loadGoodsDetail");
 curl_setopt($curl, CURLOPT_HEADER,         0);
 curl_setopt($curl, CURLOPT_VERBOSE,        0);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl, CURLOPT_USERAGENT,      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36");
+curl_setopt($curl, CURLOPT_USERAGENT,      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36");
 curl_setopt($curl, CURLOPT_POST,           true);
-curl_setopt($curl, CURLOPT_POSTFIELDS,     http_build_query(['salproId' => 453477]));
-$json = curl_exec($curl);
+curl_setopt($curl, CURLOPT_POSTFIELDS,     http_build_query([
+    'categoryId' => 453547,
+    'goodsId'    => 'b55c0aed-0155-1034-a99e-c7874ce9aca2',
+    'orgId'      => '10c967c4-ec8d-4f82-9ace-bf24d8b6f470'
+]));
+$result = curl_exec($curl);
 curl_close($curl);
 
-// Decode JSON
-$result = json_decode($json);
+// Decode response
+$deocdedResult = json_decode($result);
 
-// Output price
-$price = $result[0]->SAL_PRICE;
+// Get currnet price
+$currentPrice = $deocdedResult->goodsPrice;
 
-if ($price != 199) {
+// Compare price
+echo logger("Notification: Price != 268");
+
+if ($currentPrice != 268) {
     $config = [
         'api_key' => "key-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
         'api_url' => "https://api.mailgun.net/v2/DOMAIN.COM/messages",
@@ -43,7 +58,7 @@ if ($price != 199) {
     $result = curl_exec($ch);
     curl_close($ch);
 
-    echo "Price change at ".date("Y-m-d H:i:s");
+    echo logger("Price change: YES");
 }else{
-    echo "No price change";
+    echo logger("Price change: NO");
 }
