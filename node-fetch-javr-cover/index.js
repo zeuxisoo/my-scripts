@@ -137,31 +137,45 @@ async function main(basePath) {
     //
     console.log("Reading folder list ...");
     const folderPaths = fs.readdirSync(basePath)
-        .map(name => path.join(basePath, name))
-        .filter(fullPath => fs.lstatSync(fullPath).isDirectory() === true)
-        .sort();
+        .reduce((accumulator, currentValue, currentIndex) => {
+            const filePath = path.join(basePath, currentValue);
+
+            return fs.lstatSync(filePath).isDirectory() === true ? accumulator.concat(filePath) : accumulator;
+        }, []);
 
     //
     console.log("Finding folder cover list ...");
-    const folderCovers  = await findFolderCovers(baseImageUrl, folderPaths);
+    const folderCovers = await findFolderCovers(baseImageUrl, folderPaths);
 
     //
     console.log("Downloading folder cover list ...");
-    const successCovers  = folderCovers.filter(cover => cover.ok == true);
-    const failedCovers   = folderCovers.filter(cover => cover.ok == false);
-    const downloadStatus = await downloadCovers(successCovers);
+    const coverStatus = folderCovers
+        .reduce((accumulator, currentValue, currentIndex) => {
+            const category = currentValue.ok === true ? 'success' : 'failed';
+
+            accumulator[category] = accumulator[category].concat(currentValue);
+
+            return accumulator;
+        }, {
+            success: [],
+            failed : []
+        });
+
+    const downloadStatus = await downloadCovers(coverStatus.success);
 
     //
     console.log("Summarizing results ...");
-    const notFoundCoverNumbers    = failedCovers
+    const notFoundCoverNumbers = coverStatus.failed
         .map(cover => cover.folderName)
         .join(", ");
 
     const notDownloadCoverNumbers = downloadStatus
-        .filter(status => status.ok == false)
-        .map(status => status.folderName)
-        .join(",");
+        .reduce((accumulator, currentValue, currentIndex) => {
+            return currentValue.ok === false ? accumulator.concat(currentValue.folderName) : accumulator;
+        }, [])
+        .join(", ");
 
+    //
     console.log(`=> Not found covers   : ${notFoundCoverNumbers}`);
     console.log(`=> Not download covers: ${notDownloadCoverNumbers}`)
 }
