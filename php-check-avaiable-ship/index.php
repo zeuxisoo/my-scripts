@@ -1,17 +1,19 @@
 <?php
-$client = new SoapClient("http://example.com/mobileservice/ws/mobileservice.asmx?WSDL", array(
+define('SEND_LOCK_FILE', '/path/to/php-check-available-ship.mail.lock');
+
+$client = new SoapClient("http://example.com/mobileservice/ws/mobileservice.asmx?WSDL"/*, array(
     'proxy_host' => '127.0.0.1',
     'proxy_port' => 8888
-));
+)*/);
 
-// Get avaiable methods
+// Get available methods
 // print_r($client->__getFunctions());
 
 $voyageList = $client->getVoyageList(array(
     'lang'       => 'T',
     'parameters' => array(
-        array('sailDate',           '2013-11-06'),
-        array('sailDateReturn',     '2013-11-07'),
+        array('sailDate',       '2013-11-06'),
+        array('sailDateReturn', '2013-11-07'),
 
         array('fromPortCode',       'HKC'),
         array('toPortCode',         'ZS'),
@@ -93,6 +95,55 @@ if ($dataset_main->length >= 1) {
 
         printf("===========================================\n");
     }
+
+    send_mailgun();
 }else{
     echo "Not found data";
+}
+
+function send_mailgun() {
+    printf("Send mail\n");
+
+    if (file_exists(SEND_LOCK_FILE) && is_file(SEND_LOCK_FILE)) {
+        printf("=> !!! Lock exists, dont send email\n");
+
+        return false;
+    }
+
+    printf("=> Prepare send email\n");
+
+    $config = array();
+    $config['api_key'] = "key-FOR-THE-MAILGUN"; // mailgun api key
+    $config['api_url'] = "https://api.mailgun.net/v3/PLEASE_CHANGE_TO_YOUR_DOMAIN_NAME/messages"; // mailgun domain
+
+    $message = array();
+    $message['from']    = "Your Name <your@email.com>";
+    $message['to']      = "to-your-name@email.com";
+    $message['subject'] = "Ship ticket is fine";
+    $message['html']    = "You can buy the ticket now.";
+
+    $ch = curl_init();
+
+    curl_setopt($ch, CURLOPT_URL, $config['api_url']);
+    curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+    curl_setopt($ch, CURLOPT_USERPWD, "api:{$config['api_key']}");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS,$message);
+
+    $result = curl_exec($ch);
+
+    curl_close($ch);
+
+    printf("=> Mailgun response: %s\n", $result);
+    printf("=> Write lock file for send once\n");
+
+    file_put_contents(SEND_LOCK_FILE, date("Y-m-d H:i:s"));
+
+    printf("=> Finish!\n");
+
+    return $result;
 }
