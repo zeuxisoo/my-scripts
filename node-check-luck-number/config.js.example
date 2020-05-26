@@ -1,0 +1,17 @@
+module.exports = {
+    siteUrl: "http://target.domain.com",
+
+    pageUrl: "/script.ext",
+
+    pageQueryString: {
+        "pagename": "good",
+        "loadtype": "range",
+        "loadaction": "paging",
+        "init": 0,
+        "category": 17,
+        "price1": 0,
+        "price2": 1000000,
+        "sorting": "ASC",
+        "page": 1
+    }
+};

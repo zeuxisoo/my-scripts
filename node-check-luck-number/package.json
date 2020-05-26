@@ -1,0 +1,10 @@
+{
+    "engines": {
+        "node": ">=10.15.3"
+    },
+    "dependencies": {
+        "axios": "^0.19.2",
+        "chalk": "^4.0.0",
+        "cheerio": "^1.0.0-rc.3"
+    }
+}
