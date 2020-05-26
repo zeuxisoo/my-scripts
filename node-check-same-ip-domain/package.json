@@ -2,7 +2,7 @@
   "name": "cilion",
   "version": "0.1.0",
   "dependencies": {
-    "request": "~2.27.0",
+    "request": "~2.88.2",
     "cheerio": "~0.12.3",
     "printf": "~0.1.2",
     "colors": "~0.6.2",
