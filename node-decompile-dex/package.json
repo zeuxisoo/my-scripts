@@ -1,7 +1,7 @@
 {
     "dependencies": {
         "optimist": "~0.6.*",
-        "request": "~2.33.*",
+        "request": "~2.88.*",
         "winston": "~0.7.*",
         "mkdirp": "~0.3.*",
         "async": "~0.2.*"
