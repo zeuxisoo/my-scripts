@@ -5,11 +5,17 @@ const request = require('request');
 //
 const config = require('./config.json');
 
+const baseImageUrl = config.baseImageUrl;
+
 //
 function sleep(time) {
     const stop = new Date().getTime() + time;
 
     while(new Date().getTime() < stop);
+}
+
+function toCoverUrl(path) {
+    return baseImageUrl + path;
 }
 
 function findCoverUrl(imagePageUrl) {
@@ -60,6 +66,7 @@ async function findFolderCovers(baseImageUrl, folderPaths) {
             }));
 
             console.log(`=> Cover : ${coverUrl}`);
+            console.log(`=> Fixed : ${toCoverUrl(coverUrl)}`)
         }catch(e) {
             coverList.push(Object.assign(baseCover, {
                 message: e
@@ -76,7 +83,7 @@ async function findFolderCovers(baseImageUrl, folderPaths) {
 
 function downloadCover(coverUrl, saveCoverFilePath)  {
     return new Promise((resolve, reject) => {
-        request.get(coverUrl)
+        request.get(toCoverUrl(coverUrl))
             .on('error', error => reject('Cannot fetch the cover'))
             .on('response', response => {
                 if (response.statusCode != 200) {
@@ -132,8 +139,6 @@ async function downloadCovers(covers) {
 }
 
 async function main(basePath) {
-    const baseImageUrl = config.baseImageUrl;
-
     //
     console.log("Reading folder list ...");
     const folderPaths = fs.readdirSync(basePath)
@@ -187,4 +192,5 @@ if (args.length <= 0) {
     console.log('Please pass target path');
 }else{
     main(args[0]);
+    // downloadCover("https://www.javbus.com/pics/cover/88n1_b.jpg", "/Volumes/u20200829/Cut/2021-03-03-1440/___check/STARS-368/STARS-368.png")
 }
